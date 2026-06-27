@@ -196,7 +196,7 @@
             </a>
           </div>
         </div>
-        <form class="contact-form" id="contactForm">
+        <form class="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="name">Namn</label>
@@ -211,6 +211,8 @@
             <label for="message">Meddelande</label>
             <textarea id="message" name="message" rows="5" placeholder="Berätta vad vi kan hjälpa dig med..." required></textarea>
           </div>
+          <input type="hidden" name="_next" value="https://locdet.vercel.app?tack=1" />
+          <input type="hidden" name="_subject" value="Nytt meddelande via locdet.com" />
           <button type="submit" class="btn-primary btn-full">Skicka meddelande</button>
         </form>
       </div>
@@ -258,14 +260,6 @@
       });
     });
 
-    // Contact form (mailto fallback)
-    document.getElementById('contactForm').addEventListener('submit', function(e) {
-      e.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
-      window.location.href = `mailto:mr@locdet.com?subject=Kontakt från ${encodeURIComponent(name)}&body=${encodeURIComponent(message + '\n\nFrån: ' + name + '\nE-post: ' + email)}`;
-    });
   </script>
 </body>
 </html>
