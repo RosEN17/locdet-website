@@ -104,36 +104,236 @@
     <div class="container">
       <span class="section-label">Produkter</span>
       <h2>Utrustning i världsklass</h2>
-      <p class="section-intro">Vi är återförsäljare av Vivax-Metrotech – en världsledande tillverkare av utrustning för ledningsdetektering och rörinspektering.</p>
-      <div class="products-grid">
-        <div class="product-card">
-          <div class="product-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5.5 5.5a9 9 0 0 0 0 13M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+      <p class="section-intro">Vi är auktoriserad återförsäljare av Vivax-Metrotech – en av världens ledande tillverkare av utrustning för ledningsdetektering och rörinspektering. Kontakta oss för prisuppgifter.</p>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="alla">Alla</button>
+        <button class="filter-btn" data-filter="energi">Energi</button>
+        <button class="filter-btn" data-filter="telekom">Telekom</button>
+        <button class="filter-btn" data-filter="gas">Gas</button>
+        <button class="filter-btn" data-filter="fiber">Fiber</button>
+        <button class="filter-btn" data-filter="va">VA</button>
+        <button class="filter-btn" data-filter="infrastruktur">Infrastruktur</button>
+      </div>
+
+      <div class="products-grid-full" id="productGrid">
+
+        <!-- vLoc3-Pro -->
+        <div class="product-card-full" data-cats="energi telekom gas fiber va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/><path d="M5.5 5.5a9 9 0 0 0 0 13M18.5 5.5a9 9 0 0 1 0 13"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vLoc3-Pro</h3>
+            </div>
           </div>
-          <h3>Kabelsökare</h3>
-          <p>vLoc3-serien med avancerad 3D-antennteknologi för precisionsdetektering av ledningar på djupet.</p>
-        </div>
-        <div class="product-card">
-          <div class="product-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 12h20M12 2v20"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="8"/></svg>
+          <p class="pcf-desc">Professionell kabelsökare med dubbla 3D-antenner och färgdisplay. Detekterar signaldistortion i realtid och har åtta passiva lokaliseringslägen. Integreras med VMMap-appen för GPS-kartläggning i fält.</p>
+          <ul class="pcf-features">
+            <li>Färgkodade EM-distortionsvarningar</li>
+            <li>Vector Locate – automatisk lokalisering</li>
+            <li>Intern dataloggning &amp; molnlagring</li>
+            <li>Bluetooth-anslutning (tillval)</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Telekom</span><span class="tag">Gas</span><span class="tag">Fiber</span><span class="tag">VA</span>
           </div>
-          <h3>Transmittrar</h3>
-          <p>Kraftfulla signalsändare för aktiv ledningsdetektering på komplexa arbetsplatser.</p>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
         </div>
-        <div class="product-card">
-          <div class="product-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
+
+        <!-- vLoc3-RTK-Pro -->
+        <div class="product-card-full" data-cats="energi telekom gas fiber va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vLoc3 RTK-Pro</h3>
+            </div>
           </div>
-          <h3>Inspektionskameror</h3>
-          <p>vCam-serien för inspektion av avloppsledningar och rör – snabb diagnos utan onödigt grävande.</p>
-        </div>
-        <div class="product-card">
-          <div class="product-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <p class="pcf-desc">Världens första kabelsökare med inbyggd RTK GNSS-teknik. Kombinerar exakt ledningslokalisering med centimeternoggrann GPS-positionering via 4G LTE. Perfekt för GIS-integration och infrastrukturkartering.</p>
+          <ul class="pcf-features">
+            <li>RTK GNSS – centimeternoggrannhet</li>
+            <li>Inbyggd 4G LTE för realtidskorrigering</li>
+            <li>Enhandsoperation – lokalisera och kartera samtidigt</li>
+            <li>Molnbaserad datahantering</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Fiber</span><span class="tag">Gas</span><span class="tag">Infrastruktur</span>
           </div>
-          <h3>GPS-kartläggning</h3>
-          <p>RTK GNSS-integration för exakt positionering och digital dokumentation av ledningsnätet.</p>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
         </div>
+
+        <!-- vLoc3-5000 -->
+        <div class="product-card-full" data-cats="energi telekom gas fiber va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/><path d="M2 12h2M20 12h2M12 2v2M12 20v2"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vLoc3-5000</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Avancerad kabelsökare med digital signalbehandling, inbyggd Bluetooth och GPS. Kartlägger ledningars position i realtid via VMMap-appen och integrerar med GIS-system. Har Signal Select™-teknik för att identifiera signalöverspridning.</p>
+          <ul class="pcf-features">
+            <li>Inbyggd Bluetooth &amp; GPS</li>
+            <li>Signal Select™ – identifierar signalöverspridning</li>
+            <li>Feldetektering och skärmfel-lokalisering</li>
+            <li>98 Hz–200 kHz frekvensspann</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Telekom</span><span class="tag">Gas</span><span class="tag">VA</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- vLoc3-9800 -->
+        <div class="product-card-full" data-cats="energi telekom gas va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M8.5 8.5a5 5 0 0 0 0 7M15.5 8.5a5 5 0 0 1 0 7"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vLoc3-9800</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Pålitlig kabelsökare med avståndskänslig vänster/höger-vägledning och kompassriktningsindikator. Automatisk förstärkningskontroll och intern dataloggning. Stöder marker-lokalisering via tillkopplad MLA-adapter.</p>
+          <ul class="pcf-features">
+            <li>Avståndskänslig L/R-vägledning</li>
+            <li>Kompasslinjindikator</li>
+            <li>Fullt automatisk förstärkningskontroll</li>
+            <li>Intern dataloggning &amp; molnlagring</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Telekom</span><span class="tag">Gas</span><span class="tag">VA</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- vScan -->
+        <div class="product-card-full" data-cats="energi telekom gas va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vScan Avoidance Tool</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Enkelt och kostnadseffektivt verktyg för att undvika nedgrävda ledningar. Kräver ingen specialutbildning tack vare branschstandardiserade kontroller. Högupplöst punktmatris-display med automatisk bakgrundsbelysning.</p>
+          <ul class="pcf-features">
+            <li>Tvåknappsoperation – minimal upplärning</li>
+            <li>Passiv signaldetektering (el, radio, katodskydd)</li>
+            <li>Visuella, akustiska och vibrationsvarningar</li>
+            <li>2 GB automatisk dataloggning</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Gas</span><span class="tag">VA</span><span class="tag">Infrastruktur</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- vCam-6 -->
+        <div class="product-card-full" data-cats="va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="15" height="10" rx="2"/><path d="M17 9l5-2v10l-5-2V9z"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vCam-6 HD</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">HD-inspektionskamera för lateraler och mindre huvudledningar (75–200 mm). 1080p självlevelerande kamerahuvud, 1 TB intern lagring och 4 timmars batteritid. Wi-Fi-anslutning med gratis mobilapp för styrning i fält.</p>
+          <ul class="pcf-features">
+            <li>1080p HD självlevelerande kamera</li>
+            <li>9,7" HD-display synlig i dagsljus</li>
+            <li>1 TB intern hårddisk</li>
+            <li>Wi-Fi + mobilapp för fjärrstyrning</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">VA</span><span class="tag">Infrastruktur</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- vCamMX-2+ -->
+        <div class="product-card-full" data-cats="va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="8" width="12" height="8" rx="2"/><path d="M15 10l5-2v8l-5-2v-4z"/><circle cx="9" cy="12" r="2"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">vCamMX-2+</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Kompakt mini-inspektionskamera för rör med liten diameter (38–100 mm). Två utbytbara HD-kamerahuvuden, inbyggd 512 Hz/640 Hz/33 kHz sond för exakt positionering. USB-inspelning med ett knapptryck.</p>
+          <ul class="pcf-features">
+            <li>Passar rör 38–100 mm</li>
+            <li>Två utbytbara HD-kamerahuvuden</li>
+            <li>Inbyggd 5W sond (512/640 Hz &amp; 33 kHz)</li>
+            <li>8" display – synlig i dagsljus</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">VA</span><span class="tag">Infrastruktur</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- VM-510FFL+ -->
+        <div class="product-card-full" data-cats="energi telekom infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">VM-510FFL+</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Fristående A-ramsverktyg för lokalisering av kabelfel i marken. Ansluts till kompatibel transmitter och lokaliserar kabelväg och kabelfel i ett enda steg. Detekterar jordfel upp till 2 MOhm.</p>
+          <ul class="pcf-features">
+            <li>Lokaliserar kabelväg och fel samtidigt</li>
+            <li>Detekterar upp till 2 MOhm jordfel</li>
+            <li>Djupindikering till kabeln</li>
+            <li>Lätt vikt: 1,89 kg</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">Energi</span><span class="tag">Telekom</span><span class="tag">Infrastruktur</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
+        <!-- VM-880 -->
+        <div class="product-card-full" data-cats="va infrastruktur">
+          <div class="pcf-header">
+            <div class="pcf-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <div>
+              <span class="pcf-model">Vivax-Metrotech</span>
+              <h3 class="pcf-name">VM-880 Metalldetekter</h3>
+            </div>
+          </div>
+          <p class="pcf-desc">Järnmetalldetekter för att hitta nedgrävda eller övertäckta ventilbrunnar, manhålslock och gränsmarkeringar. Avvisar icke-järnhaltiga material som aluminiumburkar för att minimera falska larm.</p>
+          <ul class="pcf-features">
+            <li>Detekterar enbart järnhaltiga metaller</li>
+            <li>Ultralätt: 0,7 kg – kolfiberantennrör</li>
+            <li>Automatisk enknapps-känslighet</li>
+            <li>60/50 Hz elnätssignalvarning</li>
+          </ul>
+          <div class="pcf-tags">
+            <span class="tag">VA</span><span class="tag">Infrastruktur</span>
+          </div>
+          <a href="#kontakt" class="pcf-btn">Kontakta oss för pris</a>
+        </div>
+
       </div>
     </div>
   </section>
@@ -243,6 +443,19 @@
       link.addEventListener('click', () => {
         navLinks.classList.remove('open');
         hamburger.classList.remove('active');
+      });
+    });
+
+    // Product category filter
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.product-card-full').forEach(card => {
+          const cats = card.dataset.cats || '';
+          card.classList.toggle('hidden', filter !== 'alla' && !cats.includes(filter));
+        });
       });
     });
 
