@@ -117,11 +117,10 @@ body {
 }
 
 .hero-logo {
-  height: 80px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   margin-bottom: 2rem;
-  filter: brightness(0) invert(1);
 }
 
 .hero-content h1 {
@@ -475,10 +474,9 @@ body {
 }
 
 .footer-logo {
-  height: 28px;
+  height: 36px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
 }
 
 .footer-copy {
